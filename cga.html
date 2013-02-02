@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>A simple program to calculate Grades for a class</title>
+</head>
+<body>
+<script type="text/javascript">
+var people = [
+	{name: 'Andrew', grade: 100},
+	{name: 'Robbie', grade: 91},
+	{name: 'Max', grade: 86},
+	{name: 'John', grade: 75},
+	{name: 'Natalie', grade: 68},
+	{name: 'Mila', grade: 54},
+	{name: 'Scarlett', grade: 97},
+	{name: 'Mia', grade: 82},
+	{name: 'Grace', grade: 79},
+	{name: 'Charlie', grade: 61}
+	];
+
+function classaverage(people) {
+	var classavg=0;
+	for (var i=0; i<people.length;i++) {
+		classavg += people[i].grade;
+	}
+	return classavg/people.length;
+	}
+
+function gradeletter(num) {
+	if (num>=90) {
+		return 'A';
+	}
+	else if (num>=80) {
+		return 'B';
+	}
+	else if (num>=70) {
+		return 'C';
+	}
+	else if (num>=60) {
+		return 'D';
+	}
+	else {
+		return 'F';
+	}
+	}
+var avggrade = classaverage(people);
+var lettergrade = gradeletter(avggrade);
+document.write("Average grade: " + avggrade + "<br>");
+document.write("Letter grade: " + lettergrade);
+</script>
+</body>
+</html>
