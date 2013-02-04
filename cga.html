@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>A simple program to calculate Grades for a class</title>
+	<title>A simple program to calculate grades for a class</title>
 </head>
 <body>
 <script type="text/javascript">
@@ -23,7 +23,7 @@ function classaverage(people) {
 	for (var i=0; i<people.length;i++) {
 		classavg += people[i].grade;
 	}
-	return classavg/people.length;
+	return classavg/.length;
 	}
 
 function gradeletter(num) {
@@ -45,7 +45,7 @@ function gradeletter(num) {
 	}
 var avggrade = classaverage(people);
 var lettergrade = gradeletter(avggrade);
-document.write("Average grade: " + avggrade + "<br>");
+document.write("Average grade: " + avggrade);
 document.write("Letter grade: " + lettergrade);
 </script>
 </body>
