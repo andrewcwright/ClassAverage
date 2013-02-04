@@ -23,7 +23,7 @@ function classaverage(people) {
 	for (var i=0; i<people.length;i++) {
 		classavg += people[i].grade;
 	}
-	return classavg/.length;
+	return classavg/people.length;
 	}
 
 function gradeletter(num) {
@@ -45,7 +45,7 @@ function gradeletter(num) {
 	}
 var avggrade = classaverage(people);
 var lettergrade = gradeletter(avggrade);
-document.write("Average grade: " + avggrade);
+document.write("Average grade: " + avggrade + "<br>");
 document.write("Letter grade: " + lettergrade);
 </script>
 </body>
